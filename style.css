@@ -1,0 +1,30 @@
+ /*.     External CSS: external css html file pe nahi laag se css file mein likha jata hain and usko link karte hain jisbi html file pe use karna hai aur ek hi external css ko ek se jyada html file mein use kiya ja sakta hain...       */
+
+h1{
+    color: red;
+    text-align: center;
+    font-size: 50px;
+}
+body{
+    background-color: yellow;
+}
+h2{
+    color: green;
+    font-size: 40px;
+}
+h3{
+
+    color: purple;
+    font-size: 30px;
+}
+h1, h2,p {
+    font-family: 'cursive', sans-serif, monospace;
+
+}
+
+.hello {
+    color:aqua;
+    font-size: 30px;
+    border-radius: 10px;
+    margin: 5px;
+}

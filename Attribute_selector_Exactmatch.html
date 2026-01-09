@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector Example</title>
+    <link rel="stylesheet" href="attribute_selector.css">
+    <style>
+        h3{
+            text-align: center;
+            color: darkblue;
+        }
+        input[required], select[required] {
+            border: 2px solid red;
+            background-color:antiquewhite;
+        }
+        input[type="submit"]{
+            background-color:blue;
+            color: white;
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+           
+
+        }
+    </style>
+</head>
+<body>
+
+        <h3>Registration Form</h3>
+        <form>
+            <label for ="Name">Full Name:</label>
+            <input type="text" id="Name" Required placeholder="Name">
+            <label for ="Email">Email:</label>
+    <input type ="email" Required placeholder="Email">
+    <label for ="Password">Password:</label>
+    <input type="password" Required placeholder="Password">
+    <label for ="Gender">Gender:</label>
+    <select id="Gender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+    </select>
+    <label for ="Mobile">Mobile No:</label>
+    <input type="tel" id="Mobile" Required placeholder="Mobile No">
+    <button type="submit" value ="Register">Register</button>
+</form>
