@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio page</title>
+</head>
+
+<body>
+    <h2> My Portfolio page</h2>
+    <h1> Sushant singh</h1>
+
+    <a href="www.linkedin.com/in/sushant-singh-36789031a"> <img
+            src="https://media.licdn.com/dms/image/v2/D4E03AQE8EXGVpg1-pw/profile-displayphoto-scale_400_400/B4EZrn997RIoAk-/0/1764828378978?e=1770854400&v=beta&t=TC73sb9J-Evb2BdMCNcmf8ij1MzjgT0f9ZUmFlUIdds"
+            class="img"> </a>
+
+    <h3> Aspiring Software Developer | Game Planning & Programming Enthusiast</h3>
+    <h1>Academic Background</h1>
+    <ul>
+        <li>B.Tech CSE Undergraduate at ITM Skills University </li>
+        <li>Completed Secondary education at S.B.P Vidhya Vihar </li>
+    </ul>
+    <video width="1470" height="240" controls>
+        <source src="WhatsApp Video 2026-01-19 at 01.07.12.mp4" type="video/mp4">
+    </video>
+    <audio controls
+</body>
+
+<style>
+    .img {
+        display: block;
+        margin: auto;
+        width: 180px;
+        height: 180px;
+        border: solid black;
+        border-radius: 50%;
+    }
+
+    body {
+        background-color: rgb(173, 230, 196);
+        margin: 0;
+        padding: 0;
+
+    }
+</style>
+
+</html>
+
+<body onclick="playVoice()">
+
+<audio id="voice">
+    <source src="sushant.ogg" type="audio/mp3">
+</audio>
+
+<script>
+function playVoice() {
+    const audio = document.getElementById("voice");
+    audio.play();
+}
+</script>
+
+</body>
