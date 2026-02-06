@@ -1,0 +1,44 @@
+.hero {
+  height: 60vh; /* vh unit */
+  background: 
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),
+    url("hero.jpg") center / cover no-repeat;
+  color: white;
+  text-align: center;
+  padding-top: 8rem;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 4rem); /* clamp() */
+}
+
+/* Button styling */
+.hero button {
+  padding: 0.8em 2em; /* em unit */
+  border: none;
+  border-radius: var(--radius);
+  background: var(--secondary);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s;
+}
+
+.hero button:hover {
+  transform: scale(1.05); /* 2D Transform */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3); /* Shadow */
+}
+
+/* =====================================================
+   ABOUT – BOX MODEL, MAX-WIDTH, TEXT
+   ===================================================== */
+
+.about {
+  max-width: 800px;
+  margin: 4rem auto; /* Margin */
+  padding: 2rem;     /* Padding */
+  background: white;
+  border-radius: var(--radius);
+  outline: 2px dashed var(--secondary); /* Outline */
+  text-align: center;
+}

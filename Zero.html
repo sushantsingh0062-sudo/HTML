@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Canvas Diagonal Moving Circle</title>
+</head>
+<body>
+
+<canvas id="c" width="300" height="150" style="border:1px solid black"></canvas>
+
+<script>
+  const canvas = document.getElementById("c");
+  const ctx = canvas.getContext("2d");
+
+  let x = 20;
+  let y = 20;
+  const radius = 15;
+
+  function animate() {
+    // clear canvas
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    // draw circle
+    ctx.beginPath();
+    ctx.arc(x, y, radius, 0, Math.PI * 2);
+    ctx.fillStyle = "blue";
+    ctx.fill();
+
+    // text
+    ctx.font = "14px Arial";
+    ctx.fillStyle = "black";
+    ctx.fillText("Diagonal Circle", 10, 20);
+
+    // diagonal movement
+    x += 2; // horizontal speed
+    y += 2; // vertical speed
+
+    // reset when out of canvas
+    if (x > canvas.width + radius) {
+      x = -radius;
+      y = -radius;
+    }
+
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+</script>
+
+</body>
+</html>
